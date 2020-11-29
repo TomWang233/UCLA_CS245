@@ -1,4 +1,4 @@
-# UCLA_CS245
+# UCLA_CS245 Big Data Analytics Course Project
 
 ## Project 5: Dynamic Graph Neural Networks For Monitoring Pandemics And Risk Factors
 
