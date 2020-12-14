@@ -11,6 +11,7 @@ Given a dynamic graph, representation learning aims to learn informative node re
 information. They can serve as powerful tools for monitoring pandemics and identifying risk factors by considering self-evolution, influence from adjacent regions, as well as impacts from the other risk factors such as weather. We ask you to implement a dynamic graph neural network (DGNN) that views the dynamic graph as a whole by adding inter-time propagation edges. The introduction of inter-time propagation edges expands node neighbors along the temporal dimension, which allows DGNN to model structural temporal dependencies among nodes without an RNN. To further speed up the learning, we can set a window along the temporal dimension and only consider inter-time propagation edges within the time window.DGNN can be viewed as a special case of Graph Neural Network (GNN) characterized by the information propagation equation. The difference is that every node is associated with a specific timestamp in DGNN. For pandemics prediction, use the neural ordinary differential equations, where we input current location embeddings (e.g. Los Angeles at Mar.8) and predict its latent representation at the next timestamp (e.g. Los Angeles at Mar.9). This approach is a natural extension of traditional epidemic models, e.g., SIR, that utilize hand-crafted ordinary differential equations to model disease spread. Here we utilize a neural network to automatically learn ordinary differential equations from data. This model can be easily parallelized and adapted as the dynamic graph evolves.
 
 ## Dataset : SafeGraph Mobility data , CDC pandemic trackers
-## Input : Graph structure data (node feature and adjacency matrix)
-## Output : A risk factor for every location
-## Evaluation : MAP, nDCG
+## Input : Daily new cases from Day N-6 to Day N, Mobility Data of Day N
+## Output : Daily new cases on Day N+6, N+10, N+14, N+18, N+22
+
+
