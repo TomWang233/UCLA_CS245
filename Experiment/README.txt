@@ -7,3 +7,7 @@ The output path for the results is also set in the file 'utils.py', please chang
 
 Available models can be found in the file 'models.py', in order to save some time, 
 please run one model each time, the model can be changed in the file 'experiments.py'.
+
+Raw data and the codes for data preprocessing are also available,
+but we do not recommend to run it, as it takes two full days to 
+process the data with two people running in parallel in Google Colab.
