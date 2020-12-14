@@ -14,4 +14,5 @@ information. They can serve as powerful tools for monitoring pandemics and ident
 ## Input : Daily new cases from Day N-6 to Day N, Mobility Data of Day N
 ## Output : Daily new cases on Day N+6, N+10, N+14, N+18, N+22
 
-
+## Team Members
+Chenyang Wang, Danfeng Guo, Haochen Yin, Huiling Huang, Panqiu Tang, Yijing Zhou
