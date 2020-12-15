@@ -35,10 +35,9 @@ def train(epoch, adj, features, y):
 
 
 def test(adj, features, y):    
-    output, weights = model(adj, features, True)
-    output = torch.clip(output, 0, 20)  
+    output = model(adj, features) 
     loss_test = F.mse_loss(output, y)
-    return output, loss_test, weights
+    return output, loss_test
 
 
 
